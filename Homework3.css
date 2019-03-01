@@ -1,0 +1,61 @@
+header{
+ display:flex; 
+ justify-content:space-between;
+}
+ul{
+  display:flex; 
+  list-style-type:none;
+}
+li{
+  /*border: 2px solid;*/
+  padding:15px; 
+}
+a{
+ text-decoration: none; 
+}
+.logo{
+  height:64px;
+}
+.logo img{
+  float:left;
+  padding-left:15px;
+  padding-right:15px;
+  height: 128px
+}
+.clearfix:before{
+  content:" ";
+  display:table;
+  clear:both;
+}
+.clearfix:after{
+  content:" ";
+  display:table;
+  clear:both;
+}
+.wrapper{
+  margin:10px auto;
+}
+.Row section {
+  display: flex;
+}
+.Row{
+  display: flex;
+  flex-wrap:wrap;
+}
+.Row section:nth-child(even){
+   /* background: red;*/
+  flex-direction: row-reverse;
+}
+.Col{
+  display: flex;
+  /*flex-wrap:wrap;*/
+  /*flex-direction:column;*/
+}
+
+img{
+  height:128px;
+}
+
+/*.ProductItemRow:nth-child(odd){
+  flex-direction:row-reverse;
+}*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    label{
+      display: inline-block;
+      width:80px;
+      margin-top: 15px;
+    }
+    input{
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+    <form action="#">
+      <div id="myDiv">
+        <label for="name"> Login: </label>
+        <input type="text" name="Name" placeholder="Enter your Login" id="name">
+      <br>
+        <label for="password"> Password: </label>
+        <input type="password" name="password" placeholder="Enter your password" id="password">
+    <br>
+     <!-- button -->
+        <input type="button" name="Login"  value="Login" onclick="ClickLogin()">
+      </div>
+    </form>
+    <script type="text/javascript">
+      var log,pas;
+function ClickLogin(){
+  var credentials = {
+    login: 'admin',
+    password: 'qwerty',
+};
+log=document.getElementById('name').value;
+pas=document.getElementById('password').value;
+if( log==credentials.login && pas==credentials.password ) {
+  document.getElementById('myDiv').style.backgroundColor='green';
+  alert('WELCOME!!!');
+  }
+ else{
+  document.getElementById('myDiv').style.backgroundColor='red';
+ alert('Проверьте правильность ввода логина и пароля');
+   } 
+console.log(log);
+}
+    </script>
+</body>
+</html>
